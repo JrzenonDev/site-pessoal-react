@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import NextHead from 'next/head';
 
 function Head({ title }) {
-  return(
+  return (
     <NextHead>
       <title>
         {title}
       </title>
-    </NextHead>
+    </NextHead>  
   );
 }
 
-Head.PropTypes = {
+Head.propTypes = {
   title: PropTypes.string.isRequired,
 }
 

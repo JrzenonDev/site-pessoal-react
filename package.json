@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "next": "latest",
+    "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
@@ -16,5 +17,5 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
   },
-  "license": "MIT"
+  "license": "ISC"
 }
