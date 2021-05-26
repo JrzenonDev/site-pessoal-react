@@ -5,6 +5,9 @@ const theme = {
   colors: {
     primary: '#0070f3',
   },
+  spacing: {
+    big: 50
+  },
 }
 
 export default class MyApp extends App {
