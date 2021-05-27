@@ -113,7 +113,7 @@ const GlobalStyle = createGlobalStyle`
 // }
 
 // principal function
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <GlobalStyle />
@@ -128,13 +128,20 @@ export default function Home() {
       <section className="postsContainer">
         <h1>Posts</h1>
 
-        <article className="postsContainer__post">
-          <h2>
-            <a href="">
-            </a>
-          </h2>
-          <p></p>
-        </article>
+        {posts.map((post) => (
+
+          <article key={post.metadata.title} className="postsContainer__post">
+            <h2>
+              <a href="#">
+                {post.metadata.title}
+              </a>
+            </h2>
+            <p>
+              {post.metadata.excerpt}
+            </p>
+          </article>
+
+          ))}
 
       </section>
 
