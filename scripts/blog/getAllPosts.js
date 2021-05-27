@@ -5,6 +5,7 @@ import remarkHTML from 'remark-html';
 
 export function getAllPosts() {
   const allPostsFilleNames = fs.readdirSync('./_posts');
+  //const allPostsFilleNames = fs.readdirSync('./_posts');
 
   const posts = allPostsFilleNames.map((filename) => {
 
